@@ -1,0 +1,77 @@
+ <link rel="stylesheet" href="/stylesheets/style.css" />
+ <main>
+        <section class="hero">
+            <div class="container">
+                <h1>
+                    Welcome to
+                    <br>
+                    Custom-Shirtzzz
+                </h1>
+                <h2>Where creativity blooms</h2>
+                <a href="/tshirts" class="btn btn-success">Start the creativity</a>
+            </div>
+        </section>
+        <section class="banner">
+
+        </section>
+        <section class="overlay">
+            <div class="container usp">
+                <div>
+                    <div>
+                        <img src="images/palette.png" alt="Paint brush">
+                    </div>
+                    <h3>Create with your imagination</h3>
+                    <p>Create your perfect t-shirt in just a few clicks! Our easy-to-use design tool lets you
+                        personalize
+                        every detail, from choosing colors and styles to adding your own text or graphics. The
+                        possibilities
+                        are endless.</p>
+                    <p>Once you're happy with your creation, simply order, and we'll take care of the rest. Wear your
+                        creativity with pridy!</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="images/plus.png" alt="Plus sign">
+                    </div>
+                    <h3>Over 10.000 user made designs</h3>
+                    <p>Explore a vast collection of over 10.000 unique, user-made t-shirt designs! <br>
+                        Every design is created and shared by our community. Browse through a variety of designs from
+                        talented creators around the world.</p>
+                    <p>Find your perfect match, or get inspired to create your own custom masterpiece. The choice is
+                        yours!</p>
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <div class="container faq" id="faq">
+      {{#each faqs}}
+      <div>
+  <h4 class="accordion">{{this.question}}</h4>
+{{this.answer}}
+
+      </div>
+      {{/each}}
+            </div>
+             
+        </section>
+        <section>
+            <div class="container">
+                <h2>Latest reviews</h2>
+                <div class="reviews">
+                    {{#each reviews}}
+                    <div class="card">
+
+                        <span>{{this.stars}}</span>
+                        <h4>{{this.title}}</h4>
+                        <p>{{this.text}}</p>
+                        <img class = "profile"src="{{this.image}}">
+                         <p>{{this.user}}</p>
+                          <p>{{this.date}}</p>
+                         
+ </div>
+  {{/each}}
+  </div>
+            </div>
+        </section>
+    </main>

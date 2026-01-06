@@ -1,0 +1,60 @@
+  <main class="container">
+        <div class="search-layout">
+            <aside>
+                <form method="get">
+                    <p>Keywords</p>
+                    <div class="keywords">
+                        <span class="pill">Spring &#x2716;</span>
+                        <span class="pill">Smart &#x2716;</span>
+                        <span class="pill">modern &#x2716;</span>
+                    </div>
+                    <p>Size:</p>
+                    <div class="form-check form-check-inline">
+                        <input class="checkbox" type="checkbox" id="Children" name="size" value="Children"
+                            class="form-check-input" required>
+                        <label for="Children" class="form-check-label">Children</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="checkbox" type="checkbox" id="Men" name="size" value="Men"
+                            class="form-check-input">
+                        <label for="Men" class="form-check-label">Men</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="checkbox" type="checkbox" id="Women" name="size" value="Women"
+                            class="form-check-input">
+                        <label for="Women" class="form-check-label">Women</label>
+                    </div>
+                    <p>Price</p>
+                    <div>
+                        <label for="price">€ 0 - 100</label>
+                        <input type="range" id="price" name="Price" class="price" min="0" max="100">
+                    </div>
+                </form>
+            </aside>
+            <div class="search-header">
+                <form>
+                    <input type="search" name="search" id="search" placeholder="Search" class="search">
+                    <div class="sort">
+                        <span class="pill active">&#x2714; New</span>
+                        <span class="pill">Price ascending</span>
+                        <span class="pill">Price descending</span>
+                        <span class="pill">Rating</span>
+                    </div>
+                </form>
+            </div>
+            <section class="search-results">
+               {{#each tshirts}}
+                <article>
+                    <img src="{{this.image}}" alt="{{this.name}}">
+                    <p class="text1">{{this.name}}</p>
+                    <p class="text2">{{this.price}}</p>
+                    <a class="edit" href="/tshirts/edit/{{this.name}}">Edit</a>
+                    <a class="remove" href="">Remove</a>
+                </article>
+                {{/each}}
+                <article>
+                    <a class="edit" href="/tshirts/add">Add new item</a>
+                </article>
+            </section>
+        </div>
+    </main>

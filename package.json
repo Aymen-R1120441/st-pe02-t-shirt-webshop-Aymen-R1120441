@@ -1,0 +1,20 @@
+{
+  "name": "st-pe02-t-shirt-webshop-aymen-r1120441",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www -e js,json,hbs,css"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "debug": "^4.4.3",
+    "express": "^5.2.1",
+    "hbs": "^4.2.0",
+    "http-errors": "^2.0.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

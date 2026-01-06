@@ -1,0 +1,34 @@
+
+    <main class="diff-grid">
+        <img src="images/image.png" alt="">
+        <form action="https://formtester.goodbytes.be/post.php" method="post">
+            <div class="row">
+                <label for="image" class="form-label">Picture:</label>
+                <input type="file" id="image" name="imge" accept="image/*" />
+            </div>
+            <div class="row">
+                <label for="nameProduct" class="form-label">Name product:</label>
+                <input type="text" id="nameProduct" name="nameProduct" class="form-control" required minLength="2">
+            </div>
+            <div class="row">
+                <label for="price" class="form-label">Price:</label>
+                <input type="text" id="price" name="price" class="form-control" required minLength="1">
+            </div>
+            <div class="row">
+                <label for="description" class="form-label">Description:</label>
+                <input type="text" id="description" name="description" class="form-control" required minLength="2">
+            </div>
+            <div class="row">
+                <label for="tags" class="form-label">Tags:</label>
+                <input type="text" id="tags" name="tags" class="form-control" required minLength="2">
+            </div>
+            <div class="row">
+
+                <button type="reset" class="btn btn-remove">Reset</button>
+                <button type="submit" class="btn btn-success">Save</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
