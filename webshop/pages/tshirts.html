@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom-Shirtzzz - Webshop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="/webshop/stylesheets/styles.css">
+    <script src="/webshop/scripts/app.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-text">
+                <a href="/" class="navbar-brand"><img src="/webshop/images/logo1.jpg" alt="logo Custom Shirtzz"></a>
+                <a href="/">Custom-Shirtzz</a>
+            </div>
+
+            <button class="navbar-toggler" type="button">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="tshirts.html">T-shirts</a></li>
+                    <li><a href="/pages/pricing.html">Pricing</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                </ul>
+                <a class="btn btn-transparent" href="pages/login.html">
+                    <span class="fa fa-user fa-fw"></span>
+                    <span>Admin</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="header">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li class="breadcrumb-item active">Webshop</li>
+            </ul>
+        </div>
+    </div>
+    <main class="container">
+        <div class="search-layout">
+            <aside>
+                <form method="get">
+                    <p>Keywords</p>
+                    <div class="keywords">
+                        <span class="pill">Spring &#x2716;</span>
+                        <span class="pill">Smart &#x2716;</span>
+                        <span class="pill">modern &#x2716;</span>
+                    </div>
+                    <p>Size:</p>
+                    <div class="form-check form-check-inline">
+                        <input class="checkbox" type="checkbox" id="Children" name="size" value="Children"
+                            class="form-check-input" required>
+                        <label for="Children" class="form-check-label">Children</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="checkbox" type="checkbox" id="Men" name="size" value="Men"
+                            class="form-check-input">
+                        <label for="Men" class="form-check-label">Men</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="checkbox" type="checkbox" id="Women" name="size" value="Women"
+                            class="form-check-input">
+                        <label for="Women" class="form-check-label">Women</label>
+                    </div>
+                    <p>Price</p>
+                    <div>
+                        <label for="price">€ 0 - 100</label>
+                        <input type="range" id="price" name="Price" class="price" min="0" max="100">
+                    </div>
+                </form>
+            </aside>
+            <div class="search-header">
+                <form>
+                    <input type="search" name="search" id="search" placeholder="Search" class="search">
+                    <div class="sort">
+                        <span class="pill active">&#x2714; New</span>
+                        <span class="pill">Price ascending</span>
+                        <span class="pill">Price descending</span>
+                        <span class="pill">Rating</span>
+                    </div>
+                </form>
+            </div>
+            <section class="search-results">
+                <article>
+                    <img src="/webshop/images/basic-shirt.png" alt="">
+                    <p class="text1">Basic T-shirt</p>
+                    <p class="text2">$0</p>
+                    <a class="edit" href="tshirts-edit.html">Edit</a>
+                    <a class="remove" href="">Remove</a>
+                </article>
+                <article>
+                    <img src="/webshop/images/girly-cut.png" alt="">
+                    <p class="text1">Girly cut</p>
+                    <p class="text2">$0</p>
+                    <a class="edit" href="/tshirts-edit.html">Edit</a>
+                    <a class="remove" href="">Remove</a>
+                </article>
+                <article>
+                    <img src="/webshop/images/boxy-shirt.png" alt="">
+                    <p class="text1">Boxy T-shirt</p>
+                    <p class="text2">$0</p>
+                    <a class="edit" href="tshirts-edit.html">Edit</a>
+                    <a class="remove" href="">Remove</a>
+                </article>
+                <article>
+                    <img src="/webshop/images/crop-top.png" alt="">
+                    <p class="text1">Crop top</p>
+                    <p class="text2">$0</p>
+                    <a class="edit" href="tshirts-edit.html">Edit</a>
+                    <a class="remove" href="#">Remove</a>
+                </article>
+                <article>
+                    <img src="/webshop/images/baby-shirt.png" alt="">
+                    <p class="text1">Baby T-shirt</p>
+                    <p class="text2">$0</p>
+                    <a class="edit" href="tshirts-edit.html">Edit</a>
+                    <a class="remove" href="">Remove</a>
+                </article>
+                <article>
+                    <img src="/webshop/images/basic-shirt.png" alt="">
+                    <p class="text1">Children T-shirt</p>
+                    <p class="text2">$0</p>
+                    <a class="edit" href="tshirts-edit.html">Edit</a>
+                    <a class="remove" href="">Remove</a>
+                </article>
+                <article>
+                    <a class="edit" href="tshirts-add.html">Add new item</a>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="logos">
+                <img class="logo" src="/webshop/images/logo1.jpg" alt="">
+                <div class="socials">
+                    <a href="#">
+                        <img src="/webshop/images/logo-fb.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="/webshop/images/logo-insta.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="/webshop/images/logo-linked-in.png" alt="">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">
+                        <img src="/webshop/images/logo-yt.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="language">
+                <h5>Language</h5>
+                <a href="#">English</a>
+                <a href="#">Dutch</a>
+                <a href="#">French</a>
+            </div>
+            <div class="about">
+                <h5>About us</h5>
+                <a href="#">Who are we</a>
+                <a href="#">Delivery</a>
+                <a href="#">Our T-shirtzzz</a>
+                <a href="#">Contact</a>
+                <a href="#">Retourn</a>
+                <a href="#">Service</a>
+                <a href="#faq">FAQ</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

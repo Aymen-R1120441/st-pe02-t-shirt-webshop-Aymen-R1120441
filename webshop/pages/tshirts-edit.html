@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom-Shirtzzz - Edit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="/webshop/stylesheets/styles.css">
+    <script src="/webshop/scripts/app.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-text">
+                <a href="/" class="navbar-brand"><img src="/webshop/images/logo1.jpg" alt="logo Custom Shirtzz"></a>
+                <a href="/">Custom-Shirtzz</a>
+            </div>
+
+            <button class="navbar-toggler" type="button">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="tshirts.html">T-shirts</a></li>
+                    <li><a href="/pages/pricing.html">Pricing</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                </ul>
+                <a class="btn btn-transparent" href="pages/login.html">
+                    <span class="fa fa-user fa-fw"></span>
+                    <span>Admin</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="header">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li><a href="tshirts.html">Webshop</a></li>
+                <li class="breadcrumb-item active">Edit T</li>
+            </ul>
+        </div>
+    </div>
+    <main class="diff-grid">
+        <img src="/webshop/images/crop-top-edit.png" alt="">
+        <form action="https://formtester.goodbytes.be/post.php" method="post">
+            <div class="row">
+                <label for="image" class="form-label">Picture:</label>
+                <input type="file" id="image" name="imge" accept="image/*" />
+            </div>
+            <div class="row">
+                <label for="nameProduct" class="form-label">Name product:</label>
+                <input type="text" id="nameProduct" name="nameProduct" class="form-control" required minLength="2">
+            </div>
+            <div class="row">
+                <label for="price" class="form-label">Price:</label>
+                <input type="text" id="price" name="price" class="form-control" required minLength="1">
+            </div>
+            <div class="row">
+                <label for="description" class="form-label">Description:</label>
+                <input type="text" id="description" name="description" class="form-control" required minLength="2">
+            </div>
+            <div class="row">
+                <label for="tags" class="form-label">Tags:</label>
+                <input type="text" id="tags" name="tags" class="form-control" required minLength="2">
+            </div>
+            <div class="row">
+
+                <button type="reset" class="btn btn-remove">Reset</button>
+                <button type="submit" class="btn btn-success">Save</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="logos">
+                <img class="logo" src="/webshop/images/logo1.jpg" alt="">
+                <div class="socials">
+                    <a href="#">
+                        <img src="/webshop/images/logo-fb.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="/webshop/images/logo-insta.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="/webshop/images/logo-linked-in.png" alt="">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">
+                        <img src="/webshop/images/logo-yt.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="language">
+                <h5>Language</h5>
+                <a href="#">English</a>
+                <a href="#">Dutch</a>
+                <a href="#">French</a>
+            </div>
+            <div class="about">
+                <h5>About us</h5>
+                <a href="#">Who are we</a>
+                <a href="#">Delivery</a>
+                <a href="#">Our T-shirtzzz</a>
+                <a href="#">Contact</a>
+                <a href="#">Retourn</a>
+                <a href="#">Service</a>
+                <a href="#faq">FAQ</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
